@@ -67,7 +67,7 @@ public class Reviews{
 		ArrayList<String> play_reviews = new ArrayList<String>();
 		for (Review i : reviews){
 			String title = i.getPlayTitle();
-			if (i.equals(playName)){
+			if (title.equals(playName)){
 				output += i.printReview();
 			}
 		}
